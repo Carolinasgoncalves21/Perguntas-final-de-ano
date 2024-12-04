@@ -29,32 +29,35 @@ const questions = [
                                                                                                                     "Como planeja aplicar o que aprendeu no próximo ano?",
                                                                                                                         "Qual foi o momento mais engraçado do ano?",
                                                                                                                             "O que gostaria de fazer de forma diferente no próximo ano?"
-                                                                                                                            ];
+];
 
-                                                                                                                            const grid = document.getElementById("grid");
-                                                                                                                            const questionBox = document.getElementById("questionBox");
-                                                                                                                            const questionText = document.getElementById("questionText");
+const grid = document.getElementById("grid");
+const questionBox = document.getElementById("questionBox");
+const questionText = document.getElementById("questionText");
 
-                                                                                                                            // Gerar os botões das cartas
-                                                                                                                            questions.forEach((question, index) => {
-                                                                                                                                const card = document.createElement("button");
-                                                                                                                                    card.className = "card";
-                                                                                                                                        card.textContent = index + 1;
-                                                                                                                                            card.onclick = () => showQuestion(index);
-                                                                                                                                                grid.appendChild(card);
-                                                                                                                                                });
+// Gerar os botões das cartas
+questions.forEach((question, index) => {
+        const card = document.createElement("button");
+            card.className = "card";
+                card.textContent = index + 1;
+                    card.onclick = () => showQuestion(index);
+                        grid.appendChild(card);
+});
 
-                                                                                                                                                // Mostrar a pergunta correspondente
-                                                                                                                                                function showQuestion(index) {
-                                                                                                                                                    questionText.textContent = questions[index];
-                                                                                                                                                        grid.style.display = "none";
-                                                                                                                                                            questionBox.style.display = "block";
-                                                                                                                                                            }
+// Mostrar a pergunta correspondente
+function showQuestion(index) {
+        questionText.textContent = questions[index];
+            grid.style.display = "none";
+                questionBox.style.display = "block";
+}
 
-                                                                                                                                                            // Voltar ao painel de seleção
-                                                                                                                                                            function goBack() {
-                                                                                                                                                                questionBox.style.display = "none";
-                                                                                                                                                                    grid.style.display = "grid";
-                                                                                                                                                                    }
-                                                                                                                                                                    
+// Voltar ao painel de seleção
+function goBack() {
+        questionBox.style.display = "none";
+            grid.style.display = "grid";
+}
+
+}
+}
+})
 ]
