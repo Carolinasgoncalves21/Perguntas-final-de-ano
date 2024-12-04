@@ -2,7 +2,7 @@ const questions = [
     "Qual foi seu maior aprendizado este ano?",
     "O que mais te desafiou nas aulas?",
     "Qual foi o momento mais divertido com seus colegas?",
-    "Se pudesse mudar algo no seu comportamento esse ano, o que seria?",
+    "Se você pudesse mudar algo no seu comportamento esse ano, o que seria?",
     "Qual conteúdo que você aprendeu no início do ano e não se esqueceu mais?",
     "Que habilidade ou conhecimento novo você desenvolveu?",
     "Qual foi o projeto ou atividade de que mais gostou?",
@@ -25,7 +25,7 @@ const questions = [
     "Se pudesse agradecer alguém, quem seria e por quê?",
     "Que impacto você acha que causou nos outros este ano?",
     "Qual foi o maior desafio que superou?",
-    "Qual professor te marcou positiamente este ano? ",
+    "Qual professor te marcou positivamente este ano? ",
     "Como planeja aplicar o que aprendeu no próximo ano?",
     "Qual foi o momento mais engraçado do ano?",
     "O que gostaria de fazer de forma diferente no próximo ano?"
