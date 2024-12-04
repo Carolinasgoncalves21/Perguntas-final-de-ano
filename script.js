@@ -64,31 +64,27 @@ const questions = [
     "O que gostaria de fazer de forma diferente no próximo ano?"
 ];
 
+// Referências aos elementos HTML
 const grid = document.getElementById("grid");
 const questionBox = document.getElementById("questionBox");
 const questionText = document.getElementById("questionText");
 
-// Gerar os botões das cartas (números)
+// Gerar os botões das cartas
 for (let i = 0; i < questions.length; i++) {
     const card = document.createElement("button");
     card.className = "card";
-    card.textContent = i + 1; // Números das cartas (1, 2, 3...)
-    card.onclick = function() {
+    card.textContent = i + 1; // Números das cartas
+    card.onclick = function () {
         showQuestion(i, card); // Passa o índice e o botão clicado
     };
     grid.appendChild(card);
 }
 
-// Mostrar a pergunta correspondente à carta clicada
+// Mostrar a pergunta correspondente
 function showQuestion(index, card) {
     questionText.textContent = questions[index];
-    grid.style.display = "none"; // Esconde a grade de números
-    questionBox.style.display = "block"; // Exibe a pergunta
-    card.classList.add("selected"); // Marca a carta como selecionada
+    grid.style.display = "none"; // Esconde a grade
+    questionBox.style.display = "block"; // Mostra a pergunta
+    card.classList.add("selected"); // Marca como selecionado
 }
 
-// Voltar ao painel de seleção de cartas
-function goBack() {
-    questionBox.style.display = "none"; // Esconde a pergunta
-    grid.style.display = "grid"; // Mostra a grade de cartas novamente
-}

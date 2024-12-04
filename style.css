@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Fundo neutro para destacar as cores natalinas */
+    background-color: #f4f4f9;
     color: #333;
     text-align: center;
     margin: 0;
@@ -12,9 +12,8 @@ h1 {
     color: white;
     padding: 20px 0;
     margin: 0;
-    font-family: 'Arial', sans-serif;
     font-size: 36px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para um efeito mais chamativo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .instructions {
@@ -32,7 +31,7 @@ h1 {
 }
 
 .card {
-    background-color: #D32F2F; /* Vermelho mais intenso */
+    background-color: #D32F2F; /* Vermelho intenso */
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -42,7 +41,7 @@ h1 {
     cursor: pointer;
     transition: transform 0.2s;
     min-height: 80px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -50,12 +49,20 @@ h1 {
     background-color: #B71C1C; /* Vermelho escuro ao passar o mouse */
 }
 
+.card.selected {
+    background-color: #FFDAB9; /* Fundo mais claro */
+    color: #333; /* Texto mais escuro */
+    pointer-events: none;
+    box-shadow: none;
+    transform: none;
+}
+
 .question-box {
     display: none;
     margin: 20px auto;
     max-width: 600px;
-    background-color: #FFFFFF; /* Fundo branco para destacar o conteúdo */
-    border: 2px solid #4CAF50; /* Borda verde natalino */
+    background-color: #FFFFFF; /* Fundo branco */
+    border: 2px solid #4CAF50; /* Borda verde */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -63,11 +70,11 @@ h1 {
 
 .question-box p {
     font-size: 18px;
-    color: #333; /* Cor escura para o texto da pergunta */
+    color: #333;
 }
 
 .back-button {
-    background-color: #4CAF50; /* Verde natalino */
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -80,20 +87,12 @@ h1 {
 }
 
 .back-button:hover {
-    background-color: #388E3C; /* Verde mais escuro ao passar o mouse */
+    background-color: #388E3C; /* Verde mais escuro */
 }
 
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-.card.selected {
-    background-color: #FFDAB9; /* Cor de fundo mais clara (pêssego suave) */
-    color: #333; /* Texto mais escuro para contraste */
-    pointer-events: none; /* Impede o clique novamente */
-    box-shadow: none; /* Remove o destaque da sombra */
-    transform: none; /* Remove o efeito de escala */
 }
 
