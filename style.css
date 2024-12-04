@@ -89,3 +89,11 @@ h1 {
     }
 }
 
+.card.selected {
+    background-color: #FFDAB9; /* Cor de fundo mais clara (pêssego suave) */
+    color: #333; /* Texto mais escuro para contraste */
+    pointer-events: none; /* Impede o clique novamente */
+    box-shadow: none; /* Remove o destaque da sombra */
+    transform: none; /* Remove o efeito de escala */
+}
+
